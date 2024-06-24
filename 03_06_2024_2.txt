@@ -1,0 +1,18 @@
+1.First character of an identifier must be either 
+  $, _ or alphabets
+2.From second character,we can have alphabets or 
+  numbers or $ or _
+3.No whitespaces are allowed in between characters/
+  words
+4.Identifiers are case sensitive
+5.No keywords must be used
+
+Skava - Infosys
+----------------
+Problem: "Validation of identifer"
+Sample testcase;
+  1.#rollno
+  2.roll $no
+  3.roll_no
+  4.RollNo$
+

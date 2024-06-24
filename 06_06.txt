@@ -1,0 +1,85 @@
+Looping Statements
+------------------
+2.'do-while'
+  - is a exit level loop which allow once for 
+    execution and checks for condition
+  - must have semi-colon at last after 'while'
+    syntax:
+		do
+		{
+		   // body statement
+		}while(condition);
+  Pgm-1:
+	 To print the numbers which are divisible by 
+         4 from 100 to 10 using do-while loop.
+         int i=100;
+	 do
+ 	 {
+ 	   if(i%4==0)
+             System.out.print(i+" ");
+           i--;
+	 }while(i>=10);
+  Pgm-2:
+	 To choose a particular food from multiple 
+         choices:
+		1.Idly    price Rs.10/idly
+		2.Briyani     Rs.100
+		3.Dhosa	      Rs.40
+		4.Meals	      Rs.100
+		5.Billing and exit Total Amount: ?
+	 Ask repeatly until billing is done
+    
+     int tprice=0,choice;
+     int qty=0;
+     Scanner sc=new Scanner(System.in);
+     do
+     {
+	System.out.println("1.Idly 2.Briyani 3.Dhosa 4.Meals 5.Billing and Exit");
+        choice=sc.nextInt();  // run-time input
+	switch(choice)
+        {
+           case 1:
+		  System.out.println("Enter the qty for idly:");
+                  qty=sc.next‌Int();
+		  tprice=tprice+(qty*10);	
+		 break;
+	   case 2:
+		 System.out.println("Enter the qty for briyani:");
+                 qty=sc.next‌Int();
+		 tprice=tprice+(qty*100);
+		 break;
+	   case 3:
+		 System.out.println("Enter the qty for dhosa:");
+                 qty=sc.next‌Int();
+		 tprice=tprice+(qty*40);
+		 break;
+	   case 4:
+		 System.out.println("Enter the qty for meals:");
+                 qty=sc.next‌Int();
+		 tprice=tprice+(qty*100);
+		 break;
+	   case 5:
+		 System.out.println("Total Bill:"+tprice);
+	 	 break;
+         }    
+     }while(choice<5);
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         

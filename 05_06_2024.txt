@@ -1,0 +1,224 @@
+05-06-24 - Control Statements/statements
+-----------------------------
+1.Conditional Statements
+  if
+  if.else
+  if else if..... 
+  nested if else
+2.Branching Statements
+  Switch-case   
+3.Looping Statements
+  while loop
+  do.while loop
+  for loop
+4.Looping control statement
+  break
+  continue
+
+1.Conditional Statements
+  a).if statement
+     -has only one choice based on condition
+     if(10<20)
+       System.out.printnl("Hi");
+     if(true)
+       System.out.print(10);
+     
+     if(10)  // Compilation Error
+       System.out.println("Hi");
+
+     if(10<20)
+       System.out.println("Hi");
+       System.out.println("Bye");
+
+   b).if.else
+      -it has two choices out of which one will be
+       executed
+       if(20<30)
+         S.o.p("Hi");
+       else
+         S.o.p("Bye");
+       
+      -Dont have any statements between if and else
+          if(10<20)
+           S.o.p("Hi");
+          S.o.p("Bye");   // Error
+          else
+            S.o.p("Byeeee");
+Qs.1
+     Pgm to check the given has eight or not  cond:N<100
+     int no=81;
+     if(no%10==8 || no/10==8)
+       S.o.p("Yes");
+     else
+       S.o.p("Yes");  
+Qs.2
+     Pgm to check the given is divisible by 5 and 7
+     int no=35;
+     if(no%5==0 && no%7==0)
+       S.o.p("Yes");
+     else
+       S.o.p("No"); 
+Qs.3
+    Pgm to check the given is not divisible by 5 and 7
+     if(no%5!=0 && no%7!=0)
+       S.o.p("Yes");
+     else
+       S.o.p("No");
+3.if.else if...else
+  -->it has multiple options out of which one will be 
+     executed
+  -->'else if' must have condition
+  -->'else' is optional for this statement 
+  Qs.1 Pgm to check the given character has alphabets or 
+       Numbers or Others
+       char a='1';
+       if((a>=97 && a<=122) || (a>=65 && a<=90))
+         S.o.p("Alphabets");
+       else if(a>=48 && a<=57)       
+         S.o.p("Numeric");
+       else
+         S.o.p("Others");
+ 
+       (a>='a' && a<='z') || (a>='A' && a<='Z')
+        a>='0' && a<='9'
+Qs.2 
+     Pgm to check the given number is single digit
+     or double digit or more 		Constraint:+ve
+     int a=45;
+     if(a<10)
+      S.o.p("Single");
+     else if(a<100) 
+      S.o.p("Double");
+     else
+      S.o.p("More");
+
+Nested if else....
+------------------
+- it has 'if' or 'else' within another if and else
+Pgm-1
+    Pgm to check the given number is negative or positive
+    if it is positive, check it for one or two or more
+    digit
+    int a=10; 
+    if(a<0)
+      S.o.p("Negative");
+    else
+    {
+       if(a<10)
+          S.o.p("Single");
+       else if(a<100) 
+          S.o.p("Double");
+       else
+          S.o.p("More");        
+    }
+Ruby - R 
+
+
+
+    
+       
+
+     In C
+      if(-1)
+        printf("Hi");
+      if(0)
+        printf("Hi");
+      if(10<20)
+        printf("Hi");
+      if("SIMATS")
+        printf("HI");
+      if(printf("SIMATS"))
+        printf("Hi");
+
+2.Branching statement - Switch case
+  1.Any number of cases can be there in a switch
+  2.All the case value must be either integer or characer
+  3.Every case must be unique.i.e no duplication allowed
+  4.'break' keyword is optional for a case
+  5.Only one default case is allowed and it can be 
+    placed anywhere in the program {optional}
+  6.Switch will take only one case for execution from
+    multiple options
+
+  Qs.1
+       int a=10;
+       switch()  // Error
+       {
+          case 5:
+		S.o.p("Hi 5");
+                break;
+          case 10:
+		S.o.p("Hi 10");
+       }
+   Qs.2
+       int a=10;
+       switch(a)  
+       {
+          case 5:
+		S.o.p("Hi 5");
+           case 10:
+		S.o.p("Hi 10");
+       }
+          Ans: Hi 10
+     Qs.3
+       int a=10;
+       switch(a)  
+       {
+          default:
+		 S.o.p("Hiiiii");
+          case 5:
+		S.o.p("Hi 5");
+          case 10:
+		S.o.p("Hi 10");
+          case 15:
+		S.o.p("hi 15");
+       }
+          Ans: hi 10 
+	       hi 15
+Qs.4
+       int a=25;
+       switch(a)  
+       {
+          default:
+		 S.o.p("Hiiiii");
+          case 5:
+		S.o.p("Hi 5");
+          case 10:
+		S.o.p("Hi 10");
+          case 15:
+		S.o.p("hi 15");
+       }
+          Ans: hiiiii 
+	       hi 5
+	       hi 10
+	       hi 15
+Qs.5
+       char a='1';
+       switch(a)  
+       {
+          default:
+		 S.o.p("Hiiiii");   break;
+          case '1':
+		S.o.p("Hi 1");
+		break;
+          case '2':
+		S.o.p("Hi 2");
+		break;
+          case 48:                   // Compilation Error
+		S.o.p("hi 48");
+		break;
+	  case 49:
+		S.o.p("hi 49");
+       }
+          Ans: 
+
+
+		int a=10;
+		switch(a)
+		{
+		   case 5+5:
+			   System.out.println("Hi u");
+		       continue;
+		   case 11.5:  // Error
+			   System.out.println("Bye");
+		}

@@ -1,0 +1,148 @@
+/ and %
+--------
+For Division:
+     15/4 = 3
+     4/15 = 0
+     -15/4= -3
+     -15/-4 = 3
+     15/-4 = -3
+    15.0/4 = 3.75
+   (float)15/4 = 3.75
+
+Appls:
+ To remove the unit digit      3456/10 = 345
+ To get MSB number             3456/1000 = 3
+
+% Modulo : Gives remainder as an answer
+ I/P : Numbers {Not Float}    
+ It takes the signature of NMR for final answer 
+       15%4 = 3 
+        4%15 = 4 {Nmr<Dmr = Nmr}
+        -15%4 = -3
+        15%-4 = 3
+        -15%-4= -3
+        -4%-15=-4
+Benefits:
+ 	To get the unit digit :    3456%10 = 6
+        To remove the MSB digit:   3456%1000=456 
+II.Relational Operator
+   < , >, <=,>=,==,!=
+   Left to right
+   input: Integers,Float,Character
+   Output: boolean {true/false}
+III.Logical Operator
+Input: Numbers or boolean  
+Output: boolean{true /false}
+   && - AND
+   || - OR
+    ! - NOT
+   A     B     A&&B    A||B
+   true  true  true    true
+   true  false false   true
+   false true  false   true
+   false false false   false
+
+  int a=15;
+  boolean b=true || --a<20;
+  System.out.println(a);  // 15
+IV.Bitwise Operators
+   & - AND
+   | - OR
+   ^ - X-OR
+   ~ - Tilde / 1's COmplement/Negation
+   << - left shift
+   >> - Right shift
+Input: Integers
+Output: Integers
+Process: Bit
+
+qs.4
+    int a=14,b=20;
+    int c=a^b;
+    S.o.p(c);   // 26
+
+   01110
+   10100  ^
+ -------
+   11010 --> 26 Ans
+
+^ - X-or
+ 
+1 1 or 0 0 ----> 0
+1 0 or 0 1 ----> 1
+
+Shortcuts:
+1. For & operator
+   if number 0 is at left or right ---> Ans : 0
+        10 & 0 = 0
+        0  & 10 = 0
+   if both numbers are same ----> Ans: Number
+        10 & 10 = 10
+2. For | operator
+   if number 0 is at left or right ---> Ans: Number
+        10 | 0 = 10
+        0  | 10 = 10
+   if both numbers are same ---> Ans: Number
+         10 | 10 = 10
+3.For ^ Operator
+   if number 0 is at left or right ---> ANs: Number
+        10 ^ 0 = 10
+        0  ^ 10 = 10
+   if both numbers are same---> Ans: 0
+         10 ^ 10 = 0
+   10^20^30 <----> 10^30^20 same answer
+
+~ - Tilde / Negation
+int a=10;
+int b=~a;
+S.o.p(b) // -11
+Shortcut: Add 1 with given number and multiply -
+
+int a=-10;
+int b=~a;
+S.o.p(b); // 9
+
+Shift Operation 
+<< left shift
+>> right shift
+
+int no=sc.nextInt();
+String out=(no>0)?"Positive":(no<0)?"Negative":"Zero";
+System.out.println(out);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

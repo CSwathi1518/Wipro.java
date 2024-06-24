@@ -1,0 +1,37 @@
+Looping Statements
+------------------
+1.'while' loop 
+  - also referred as entry level check loop
+  - Condition is mandatory .i.e within while(condition)
+  syntax:
+	starting_value
+	while(ending_value or condition)
+	{
+           // body statements
+  	   Increment or Decrement
+	}
+  Qs.1 Pgm to print the numbers from 10 to 20
+	
+  Qs.2 Pgm to print the numbers from 10 to 100 which are divisible by
+       3 and 5
+       int i=10;
+       while(i<=100)
+       {
+          if(i%3==0 && i%5==0)
+            System.out.println(i+" ");
+          i++;
+        }
+   Qs.3 Pgm to print the numbers from 10 to 100 which are 
+        not divisible by 3 and 5
+
+   Qs.4 Pgm to print the numbers from 10 to 100 which are 
+        not divisible by 3 or 5
+
+   Qs.5 Pgm to check the given number has '8' or not
+            input=56748
+	    Output=yes
+   Qs.6 Pgm to sum the given number upto single digit
+        {Zoho -2014}
+	     input=56748
+		    = Sum=30 = 3 + 0 = 3
+   Qs.7 Pgm to arrange the numbers in 

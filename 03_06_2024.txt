@@ -1,0 +1,75 @@
+Variable
+--> it is a place holder of data
+--> has datatype and constants
+
+Example:
+	 int a=10;
+             a---> variable number
+	 
+	Declaration:
+		int a;
+	Initialization:
+		int b=100;
+	Assignment:
+		int c;
+		c=10;  // Assignment
+
+Three Types:
+  1.Local Variable
+  2.Instance Variable
+  3.Class or Static Variable
+
+1.Local Variable
+  - is defined within a method or as parameter
+  - lifetime is very short
+  - takes stack memory
+
+  void add(int a)   // local variable
+  {
+    int x;     // local variable
+  }
+
+2.Instance Variable
+  - is defined within a class without static keyword
+  - default value is o{int}
+  - Can be accessed from main/any method using object and .(dot) operator
+  class ABC
+  {
+     int a;  //instance variable
+     public static void main(String arg[])
+     {
+        ABC ab=new ABC();
+        System.out.println(ab.a);  //Accessing instance variable using obj
+				   // Ans: 0
+        ABC cd=new ABC();
+        cd.a=150; 
+	System.out.println(cd.a);   //  150
+	ab.a=100;
+        System.out.println(ab.a);   //  100
+     }
+  }
+
+3.static or class variable
+  - is a variable which is defined within a class with static keyword
+  - default value is 0 {int}
+  - common memory for all the objects 
+  - can be accessed using class/obj name with .(Dot) operator
+  class ABC
+  {
+     static int a;  //instance variable
+     public static void main(String arg[])
+     {
+        ABC ab=new ABC();
+        System.out.println(ab.a);  //0
+        ABC cd=new ABC();
+        cd.a=150; 
+	System.out.println(cd.a);   //150  
+        System.out.println(ABC.a);  //150
+	System.out.println(ab.a);  // 150
+	ab.a=100;
+        System.out.println(cd.a);   // 100
+     }
+  }
+
+
+
