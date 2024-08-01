@@ -38,8 +38,9 @@ class UserMainCode {
         System.out.println(umc.findStringCode("Hello World"));    // Output: 2640
     }
 }
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 Step-by-Step Explanation
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 Splitting the Input String:
 The input string "world wide Web" is split into individual words:
 
